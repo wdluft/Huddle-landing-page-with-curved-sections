@@ -8,7 +8,7 @@
   --black: #212121;
 
   --bgColor: var(--white);
-  --textColor: var(--black);
+  --textColor: var(--cyan);
 
   --bodyFont: 'Open Sans', sans-serif;
   --headingFont: 'Poppins', sans-serif;
@@ -109,6 +109,12 @@ img {
   margin-top: 15vh;
 }
 
+.header::after {
+  content: url('./images/bg-section-top-mobile-1.svg');
+  margin-bottom: -10px;
+  overflow: hidden;
+}
+
 /* Description Sections */
 .descriptionSection {
   display: grid;
@@ -120,8 +126,72 @@ img {
   background: var(--paleBlue);
 }
 
+.descriptionSection__2::before {
+  content: url('./images/bg-section-bottom-mobile-1.svg');
+  margin-top: -50px;
+  overflow: hidden;
+}
+
 .descriptionSection__2 {
   background: var(--white);
+}
+
+.descriptionSection__2::after {
+  content: url('./images/bg-section-top-mobile-2.svg');
+  margin-bottom: -50px;
+  overflow: hidden;
+}
+
+.descriptionSection__3::after {
+  content: url('./images/bg-section-bottom-mobile-2.svg');
+  margin-bottom: -195px;
+  overflow: hidden;
+}
+
+/* Call to action section */
+.ctaSection {
+  margin-top: 25vh;
+  text-align: center;
+  height: 50vh;
+}
+
+.ctaSection__heading {
+  font-size: 2rem;
+}
+
+/* Footer */
+.footer {
+  background: var(--cyan);
+  color: var(--white);
+
+  display: grid;
+  grid-template-areas:
+    'newsletter'
+    'logo'
+    'contact'
+    'socials'
+    'attribution';
+}
+
+.footer__image {
+  background: var(--white);
+  color: var(--white);
+}
+
+.footer__info {
+  grid-area: logo;
+}
+
+.footer__newsletter {
+  grid-area: newsletter;
+}
+
+.footer__contact {
+  grid-area: contact;
+}
+
+.footer__socials {
+  grid-area: socials;
 }
 
 /* Attribution styles */

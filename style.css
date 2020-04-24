@@ -84,7 +84,7 @@ img {
   align-items: center;
   text-align: center;
   padding-top: 20vh;
-  padding: 15vh 1rem 0;
+  position: relative;
 }
 
 .header__title {
@@ -110,9 +110,14 @@ img {
 }
 
 .header::after {
-  content: url('./images/bg-section-top-mobile-1.svg');
-  margin-bottom: -10px;
-  overflow: hidden;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 165px;
+  background: url('./images/bg-section-top-desktop-1.svg');
+  background-position: center;
 }
 
 /* Description Sections */
@@ -120,16 +125,22 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
   background: var(--paleBlue);
+  position: relative;
 }
 
 .descriptionSection__2::before {
-  content: url('./images/bg-section-bottom-mobile-1.svg');
-  margin-top: -50px;
-  overflow: hidden;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 52px;
+  background: url('./images/bg-section-bottom-mobile-1.svg');
+  background-position: center;
 }
 
 .descriptionSection__2 {
@@ -137,33 +148,54 @@ img {
 }
 
 .descriptionSection__2::after {
-  content: url('./images/bg-section-top-mobile-2.svg');
-  margin-bottom: -50px;
-  overflow: hidden;
-}
-
-.descriptionSection__3::after {
-  content: url('./images/bg-section-bottom-mobile-2.svg');
-  margin-bottom: -195px;
-  overflow: hidden;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 102px;
+  background: url('./images/bg-section-top-mobile-2.svg');
+  background-position: center;
 }
 
 /* Call to action section */
+.ctaSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url('./images/bg-section-bottom-mobile-2.svg');
+  background-position: center;
+}
+
 .ctaSection {
-  margin-top: 25vh;
   text-align: center;
-  height: 50vh;
+  position: relative;
 }
 
 .ctaSection__heading {
   font-size: 2rem;
 }
 
+.ctaSection::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  height: 53px;
+  background: url('./images/bg-footer-top-mobile.svg');
+  background-position: center;
+}
+
 /* Footer */
 .footer {
   background: var(--cyan);
   color: var(--white);
-
+  position: relative;
   display: grid;
   grid-template-areas:
     'newsletter'

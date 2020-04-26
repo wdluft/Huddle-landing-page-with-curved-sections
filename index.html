@@ -52,7 +52,7 @@
           alt="People Icon"
           class="header__statsImage"
         />
-        <h2 class="header_statsNumber">
+        <h2 class="header__statsNumber">
           1.4k+
         </h2>
         <p class="header__statsDescription">
@@ -65,7 +65,7 @@
           alt="People Icon"
           class="header__statsImage"
         />
-        <h2 class="header_statsNumber">
+        <h2 class="header__statsNumber">
           2.7m+
         </h2>
         <p class="header__statsDescription">
@@ -161,23 +161,29 @@
         </p>
       </div>
       <div class="footer__contact">
-        <p><i class="fas fa-phone-volume"></i>Phone: +1-543-123-4567</p>
-        <p><i class="fas fa-envelope-open-text"></i>example@huddle.com</p>
+        <p class="footerContact__details">
+          <i class="fas fa-phone-alt"></i>
+          <span class="details">Phone: +1-543-123-4567</span>
+        </p>
+        <p class="footerContact__details">
+          <i class="fas fa-envelope"></i>
+          <span class="details">example@huddle.com</span>
+        </p>
       </div>
-      <div class="footer__newletter">
-        <h3>
+      <div class="footer__newsletter">
+        <h3 class="newsletter__heading">
           Newsletter
         </h3>
-        <p>
+        <p class="newsletter__p">
           To recieve tips on how to grow your community, sign up to our weekly
           newsletter. We’ll never send you spam or pass on your email address
         </p>
-        <input type="text" name="" id="" />
-        <button class="button">Subscribe</button>
+        <input type="email" class="newsletter__emailInput" />
+        <button class="button newsletter__button">Subscribe</button>
       </div>
       <div class="footer__socials">
         <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-instagram"></i>
         <i class="fab fa-twitter-square"></i>
       </div>
       <div class="footer__attribution">

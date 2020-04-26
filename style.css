@@ -135,10 +135,11 @@ img {
   content: '';
   position: absolute;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
   height: 112px;
-  background: url('./images/bg-section-top-mobile-1.svg');
+  background-image: url('./images/bg-section-top-mobile-1.svg');
   background-position: center;
+  background-size: cover;
 }
 
 /* Description Sections */
@@ -174,8 +175,9 @@ img {
   left: 0;
   width: 100%;
   height: 52px;
-  background: url('./images/bg-section-bottom-mobile-1.svg');
+  background-image: url('./images/bg-section-bottom-mobile-1.svg');
   background-position: center;
+  background-size: cover;
 }
 
 .descriptionSection__2 {
@@ -191,8 +193,9 @@ img {
   left: 0;
   width: 100%;
   height: 102px;
-  background: url('./images/bg-section-top-mobile-2.svg');
+  background-image: url('./images/bg-section-top-mobile-2.svg');
   background-position: center;
+  background-size: cover;
 }
 
 /* Call to action section */
@@ -203,8 +206,9 @@ img {
   left: 0;
   width: 100%;
   height: 100px;
-  background: url('./images/bg-section-bottom-mobile-2.svg');
+  background-image: url('./images/bg-section-bottom-mobile-2.svg');
   background-position: center;
+  background-size: cover;
 }
 
 .ctaSection {
@@ -232,9 +236,10 @@ img {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 51px;
-  background: url('./images/bg-footer-top-mobile.svg');
+  height: 83px;
+  background-image: url('./images/bg-footer-top-mobile.svg');
   background-position: center;
+  background-size: cover;
 }
 
 /* Footer */
@@ -325,32 +330,32 @@ img {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 375px) {
+@media (min-width: 640px) {
   .header {
     padding-bottom: 165px;
   }
   .header::after {
-    background: url('./images/bg-section-top-desktop-1.svg');
+    background-image: url('./images/bg-section-top-desktop-1.svg');
     height: 165px;
   }
 
   .descriptionSection__2::before {
-    background: url('./images/bg-section-bottom-desktop-1.svg');
+    background-image: url('./images/bg-section-bottom-desktop-1.svg');
     height: 139px;
   }
 
   .descriptionSection__2::after {
-    background: url('./images//bg-section-top-desktop-2.svg');
+    background-image: url('./images//bg-section-top-desktop-2.svg');
     height: 156px;
   }
 
   .ctaSection::before {
-    background: url('./images/bg-section-bottom-desktop-2.svg');
+    background-image: url('./images/bg-section-bottom-desktop-2.svg');
     height: 139px;
   }
 
   .ctaSection::after {
-    background: url('./images/bg-footer-top-desktop.svg');
+    background-image: url('./images/bg-footer-top-desktop.svg');
     height: 158px;
   }
 }
@@ -377,6 +382,7 @@ img {
   .header__p {
     width: 500px;
     padding-bottom: 2rem;
+    grid-column: 1/-1;
   }
 
   .header__button {
